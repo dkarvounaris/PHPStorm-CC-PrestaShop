@@ -1,6 +1,5 @@
-<h1>PHPStorm Code Completion for PrestaShop classes</h1>
+<h2>PHPStorm Code Completion for PrestaShop classes</h2>
 
-<h2>Introduction</h2>
 Adds code auto completion for all classes, properties and methods of PrestaShop in PHPStorm.
 
 The reason why PHPStorm can't autocomplete PrestaShop's core classes by default, is the way PrestaShop's
