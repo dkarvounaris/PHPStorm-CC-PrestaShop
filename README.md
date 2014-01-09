@@ -24,7 +24,7 @@ solutions for other frameworks I have seen do not).
 - No integration with the project, clean separation. 
 
 #### Cons:
-- If you have overriden any class and want autocompletion for your own methods and properties in the overriden class, you have to "Mark as plain text" the class file in this repository in PHPStorm.
+- If you have overridden any class and want auto completion to work for your own methods and properties in the overridden class, you have to find the class file named like the overriden class and "Mark as plain text" in PHPStorm.
  
 
 ### Method B
@@ -35,7 +35,7 @@ solutions for other frameworks I have seen do not).
 
 
 #### Pros:
-- You don't need to mark any files as plain text, to have any custom methods's auto completion working.
+- You don't need to mark any files as plain text, as you override classes, to have auto completion working on your custom methods and properties.
 
 #### Cons:
 - The classes will be loaded by PrestaShop, even if empty, which might add some ms on execution time. 
