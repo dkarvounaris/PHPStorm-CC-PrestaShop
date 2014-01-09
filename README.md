@@ -1,4 +1,4 @@
-<h2>PHPStorm Code Completion for PrestaShop classes</h2>
+## PHPStorm Code Completion for PrestaShop classes
 
 Adds code auto completion for all classes, properties and methods of PrestaShop in PHPStorm.
 
@@ -10,36 +10,33 @@ I'm closing this gap and PHPStorm can not only auto complete class names, method
 but can also find and point us to their definitions correct (something many other custom code completion
 solutions for other frameworks I have seen do not). 
 
-<h2>How to make it work</h2>
+## How to make it work
 
 
-<h3>Method A (preferred)</h3>
+### Method A (preferred)
 
-<ul>
-<li>Clone this repository into it's own folder. </li>
-<li>In your PHPStorm Project, go in File|Settings|Directories.</li>
-<li>Add the folder where you cloned as Content Root and apply changes.</li>
-<li>Refresh the index by using File|Invalidate Caches...</li>
-</ul>
+- Clone this repository into it's own folder.
+- In your PHPStorm Project, go in File|Settings|Directories.
+- Add the folder where you cloned as Content Root and apply changes.
+- Refresh the index by using File|Invalidate Caches...
 
-<h4>Pros:</h4>
+#### Pros:
 - No integration with the project, clean separation. 
 
-<h4>Cons: </h4>
+#### Cons:
 - If you have overriden any class and want autocompletion for your own methods and properties in the overriden class, you have to "Mark as plain text" the class file in this repository in PHPStorm.
  
 
-<h3>Method B</h3>
+### Method B
 
-<ul>
-<li>Clone this repository into it's own folder or download the files.</li>
-<li>Copy all downloaded PHP files into the override folder of your PrestaShop, without overriding any existing files. </li>
-<li>Refresh the index by using File|Invalidate Caches...</li>
-</ul>
+- Clone this repository into it's own folder or download the files.
+- Copy all downloaded PHP files into the override folder of your PrestaShop, without overriding any existing files. 
+- Refresh the index by using File|Invalidate Caches...
 
-<h4>Pros:</h4>
+
+#### Pros:
 - You don't need to mark any files as plain text, to have any custom methods's auto completion working.
 
-<h4>Cons: </h4>
+#### Cons:
 - The classes will be loaded by PrestaShop, even if empty, which might add some ms on execution time. 
 
