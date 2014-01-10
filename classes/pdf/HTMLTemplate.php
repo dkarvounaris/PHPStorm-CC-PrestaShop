@@ -25,3 +25,27 @@ abstract class HTMLTemplate extends HTMLTemplateCore
 {
 
 }
+
+/**
+ * Class HTMLTemplate
+ *
+ * @property Smarty $smarty
+ */
+abstract class HTMLTemplateCore
+{
+
+}
+
+
+/**
+ * Fixes a wrong @return value in classes\controller\AdminController
+ * by defining a not-existent class and extending it from the
+ * correct class.
+ * Eliminates "Method not found in class" IDE errors for calls
+ * like $this->createTemplate()->method();
+ * Eventually, this should be fixed in the PHPDoc comments of the core file.
+ **/
+abstract class Template extends Smarty_Internal_TemplateBase
+{
+
+}

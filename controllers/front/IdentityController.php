@@ -21,20 +21,15 @@
 *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 
-class PrestaShopCollection extends PrestaShopCollectionCore
+class IdentityController extends IdentityControllerCore
 {
 
 }
 
-
 /**
- * Fixes a wrong @return value in many PHPDoc comments through different classes
- * by defining a not-existent class and extending it from the correct class.
- * Eliminates "Method not found in class" IDE errors for a lot of calls.
- * Eventually, this should be fixed in the PHPDoc comments of all the core files
- * referencing "Collection" instead of "PrestaShopCollection".
- **/
-abstract class Collection extends PrestaShopCollection
+ * @property Customer $customer
+ */
+class IdentityControllerCore extends FrontController
 {
 
 }
