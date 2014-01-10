@@ -28,9 +28,9 @@ class TaxRulesTaxManager extends TaxRulesTaxManagerCore
 
 /*
  * This class doesn't really exist, however PHPDoc @return statements
- * of TaxManagerFactory have the wrong value, so we declare it
- * to "Method not found in class" and "Unknown definition" IDE errors.
- * Eventually, this would be correct in the PHPDoc comments of the core file.
+ * of TaxManagerFactory have the wrong value, so we declare it to
+ * fix "Method not found in class" and "Unknown definition" IDE errors.
+ * Eventually, this would be corrected in the PHPDoc comments of the core file.
  */
 class TaxManager extends TaxRulesTaxManagerCore
 {
