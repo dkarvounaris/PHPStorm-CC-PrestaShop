@@ -21,18 +21,18 @@
 *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 
-class ProductController extends ProductControllerCore
+class TaxRulesTaxManager extends TaxRulesTaxManagerCore
 {
 
 }
 
-/**
- * Class ProductControllerCore
- *
- * @property Product $product
- * @property Category $category
+/*
+ * This class doesn't really exist, however PHPDoc @return statements
+ * of TaxManagerFactory have the wrong value, so we declare it
+ * to "Method not found in class" and "Unknown definition" IDE errors.
+ * Eventually, this would be correct in the PHPDoc comments of the core file.
  */
-class ProductControllerCore extends FrontController
+class TaxManager extends TaxRulesTaxManagerCore
 {
 
 }

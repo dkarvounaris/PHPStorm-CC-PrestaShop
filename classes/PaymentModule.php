@@ -21,18 +21,7 @@
 *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 
-class ProductController extends ProductControllerCore
-{
-
-}
-
-/**
- * Class ProductControllerCore
- *
- * @property Product $product
- * @property Category $category
- */
-class ProductControllerCore extends FrontController
+class PaymentModule extends PaymentModuleCore
 {
 
 }

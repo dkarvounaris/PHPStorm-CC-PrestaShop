@@ -40,3 +40,14 @@ solutions for other frameworks I have seen do not).
 #### Cons:
 - The classes will be loaded by PrestaShop, even if empty, which might add some ms on execution time. 
 
+
+## Fixing "Multiple declarations" errors
+
+PHPStorm might get falsely the wrong class file or show multiple declarations for a class. So it happens as example with Search::somestaticfunction() calls in classes/Search.php, with the Shop class elsewhere etc. 
+
+You will have this happen also more often, if you include the PrestaShop-modules repository in your project. 
+
+While in the latter case, these are class overrides from some modules, that might be the correct class to look for a definition, in some cases like Search:: it points to a file class.search.php in the folder admin/ajaxfilemanager/inc, which is absolutely not the correct definition. 
+
+In cases like the described class.search.php, mark these files as Plain text. In cases where just an override declares the same class again, have either that override or the class file from this repository marked as plain text. 
+
