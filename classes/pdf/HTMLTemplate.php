@@ -49,3 +49,14 @@ abstract class Template extends Smarty_Internal_TemplateBase
 {
 
 }
+
+/**
+ * Fixes a wrong @return value of "smartTemplate" in some classes (like Helper),
+ * by defining a non-existent class and extending it from the correct class.
+ * Eliminates "Method not found in class" IDE errors for several calls
+ * Eventually, this should be fixed in the PHPDoc comments of the core file.
+ **/
+abstract class smartyTemplate extends Smarty_Internal_TemplateBase
+{
+
+}

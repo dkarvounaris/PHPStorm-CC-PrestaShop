@@ -21,18 +21,17 @@
 *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 
-
-class Supplier extends SupplierCore
+class ManufacturerController extends ManufacturerControllerCore
 {
 
 }
 
 /**
- * Class SupplierControllerCore
+ * Class ManufacturerControllerCore
  *
- * @property Supplier $supplier
+ * @property Manufacturer $manufacturer
  */
-abstract class SupplierControllerCore extends FrontController
+abstract class ManufacturerControllerCore extends FrontController
 {
 
 }
