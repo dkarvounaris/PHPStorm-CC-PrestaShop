@@ -17,6 +17,8 @@ solutions for other frameworks I have seen do not).
 - Clone this repository into it's own folder. 
 - In your PHPStorm Project, go in File|Settings|PHP
 - Click the '+' and add the folder to your project. 
+- If you work on a Prestashop module and have added a PrestaShop copy in 'Includes' too, make sure it is added after 
+this one. This will avoid that classes like the ones in the profiling directory are selected wrongly for autocompletion.   
 
 #### Pros:
 - No extra steps ever to take. Just set and forget. 
