@@ -12,8 +12,24 @@ solutions for other frameworks I have seen do not).
 
 ## How to make it work
 
+### Method C (newest, now preferred over method A and B)
 
-### Method A (preferred)
+- Clone this repository into it's own folder. 
+- In your PHPStorm Project, go in File|Settings|PHP
+- Click the '+' and add the folder to your project. 
+
+#### Pros:
+- No extra steps ever to take. Just set and forget. 
+- Will automatically look up a class here, when there is no other override in your project. 
+- Will appear in your project view only under "External Libraries", separate from your project files.
+- Will not be searched as part of your project.  
+
+#### Cons:
+- None 
+
+
+
+### Method A (old)
 
 - Clone this repository into it's own folder.
 - In your PHPStorm Project, go in File|Settings|Directories.
@@ -27,7 +43,7 @@ solutions for other frameworks I have seen do not).
 - If you have overridden any class and want auto completion to work for your own methods and properties in the overridden class, you have to find the class file named like the overriden class and "Mark as plain text" in PHPStorm.
  
 
-### Method B
+### Method B (old)
 
 - Clone this repository into it's own folder or download the files.
 - Copy all downloaded PHP files into the override folder of your PrestaShop, without overriding any existing files. 
