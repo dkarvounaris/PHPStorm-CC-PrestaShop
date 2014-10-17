@@ -17,12 +17,15 @@ solutions for other frameworks I have seen do not).
 - Clone this repository into it's own folder. 
 - In your PHPStorm Project, go in File|Settings|PHP
 - Click the '+' and add the folder to your project. 
+- If you work on a Prestashop module and have added a PrestaShop copy in 'Includes' too, make sure it is added after 
+this one. This will avoid that classes like the ones in the profiling directory are selected wrongly for autocompletion.   
 
 #### Pros:
 - No extra steps ever to take. Just set and forget. 
 - Will automatically look up a class here, when there is no other override in your project. 
 - Will appear in your project view only under "External Libraries", separate from your project files.
 - Will not be searched as part of your project.  
+- You get less "Multiple declarations" warnings (see below). 
 
 #### Cons:
 - None 
