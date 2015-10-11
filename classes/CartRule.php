@@ -1,6 +1,6 @@
 <?php
 /*
-* 2013-2014 Dimitrios Karvounaris, Innovacy
+* 2013-2015 Dimitrios Karvounaris, Innovacy
 *
 * NOTICE OF LICENSE
 *
@@ -17,7 +17,7 @@
 * Please read the included README for instructions.
 *
 *  @author Dimitrios Karvounaris <d.karvounaris@innovacy.com>
-*  @copyright  2013-2014 Dimitrios Karvounaris, Innovacy
+*  @copyright  2013-2015 Dimitrios Karvounaris, Innovacy
 *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 
