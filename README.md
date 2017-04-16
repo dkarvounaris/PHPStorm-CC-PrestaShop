@@ -1,4 +1,4 @@
-## PHPStorm Code Completion for PrestaShop classes
+## Code Completion for PrestaShop classes
 
 Adds code auto completion for all classes, properties and methods of PrestaShop in PHPStorm.
 
@@ -12,7 +12,7 @@ solutions for other frameworks I have seen do not).
 
 ## How to make it work
 
-### Method C (newest, now preferred over method A and B)
+### PHPStorm Method C (newest, now preferred over method A and B)
 
 - Clone this repository into it's own folder. 
 - In your PHPStorm Project, go in File|Settings|PHP
@@ -30,9 +30,26 @@ this one. This will avoid that classes like the ones in the profiling directory 
 #### Cons:
 - None 
 
+### Eclipse/PDT
 
+- Clone this repository into it's own folder. 
+- In your Eclipse Project, go in Project|Properties|PHP|Build Path
+- Click 'Link Source...' and add the folder to your project. 
+- Choose 'Update exclusion filters in other source folders to solve nesting
+- If you work on a Prestashop module and have added a PrestaShop copy in 'Includes' too, make sure it is added after 
+this one. This will avoid that classes like the ones in the profiling directory are selected wrongly for autocompletion.   
 
-### Method A (old)
+#### Pros:
+- No extra steps ever to take. Just set and forget. 
+- Will automatically look up a class here, when there is no other override in your project. 
+- Will appear in your project view only under "External Libraries", separate from your project files.
+- Will not be searched as part of your project.  
+- You get less "Multiple declarations" warnings (see below). 
+
+#### Cons:
+- None 
+
+### PHPStorm Method A (old)
 
 - Clone this repository into it's own folder.
 - In your PHPStorm Project, go in File|Settings|Directories.
@@ -46,7 +63,7 @@ this one. This will avoid that classes like the ones in the profiling directory 
 - If you have overridden any class and want auto completion to work for your own methods and properties in the overridden class, you have to find the class file named like the overriden class and "Mark as plain text" in PHPStorm.
  
 
-### Method B (old)
+### PHPStorm Method B (old)
 
 - Clone this repository into it's own folder or download the files.
 - Copy all downloaded PHP files into the override folder of your PrestaShop, without overriding any existing files. 
