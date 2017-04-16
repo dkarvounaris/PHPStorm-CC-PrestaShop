@@ -1,6 +1,6 @@
 ## Code Completion for PrestaShop classes
 
-Adds code auto completion for all classes, properties and methods of PrestaShop in PHPStorm.
+Adds code auto completion for all classes, properties and methods of PrestaShop. Instructions for PHPStorm and Eclipse/PDT are included, but most other IDEs (ie. NetBeans) should work too. 
 
 The reason why PHPStorm can't autocomplete PrestaShop's core classes by default, is the way PrestaShop's
 intelligent override mechanism works. PHPStorm has no knowledge of this mechanism and PrestaShop's class
