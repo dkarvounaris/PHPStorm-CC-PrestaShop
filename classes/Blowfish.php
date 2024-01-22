@@ -24,7 +24,7 @@
 if (!class_exists('Crypt_Blowfish')) {
     class Crypt_Blowfish
     {
-        public function __construct($key, $iv);
+        public abstract function __construct($key, $iv);
     }
 }
 

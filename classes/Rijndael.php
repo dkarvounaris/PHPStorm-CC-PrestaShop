@@ -24,7 +24,7 @@
 if (!class_exists('RijndaelCore')) {
     class RijndaelCore
     {
-        public function __construct($key, $iv);
+        public abstract function __construct($key, $iv);
     }
 }
 

@@ -24,7 +24,7 @@
 if (!class_exists('PhpEncryptionCore')) {
     class PhpEncryptionCore
     {
-        public function __construct($hexString);
+        public abstract function __construct($hexString);
     }
 }
 
