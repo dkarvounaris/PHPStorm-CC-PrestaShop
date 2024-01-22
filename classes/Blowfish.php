@@ -21,7 +21,14 @@
 *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 */
 
-class Blowfish extends BlowfishCore
+if (!class_exists('Crypt_Blowfish')) {
+    class Crypt_Blowfish
+    {
+        public function __construct($key, $iv);
+    }
+}
+
+class Blowfish extends Crypt_Blowfish
 {
 
 }
